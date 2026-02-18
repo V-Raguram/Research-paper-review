@@ -13,6 +13,8 @@ It breaks down the image by performing 4 operations .
 
 A mutable "weight" is placed across input data which is dot product-ed with the input data , and each weight specializes in identifying a specific feature in the data like a vertical like or intensity . this Weight is what enables the AI to identify patterns in the image  
 
+### Layer 
+Each stage of mathematical computation is called as layer .
 ## MAC
 **Multiply-and-Accumulate** ,like the name suggests , is the process of Multiplying 2 numbers and adding them to a Variable . This is one of the primary functions any AI do and This process is done millions of times . 
 ## Psum 
@@ -49,4 +51,19 @@ A logic circuit which stops the PE from performing calculation if multiplication
 
 ## Input Feature maps (IFMAP)
 Basically the input pixel (Data)
+
+## Computing-In-Memory (CIM)
+Instead of transferring data into a specialized computational unit , the data is computed in or near the memory itself . This reduces the Time and energy required by the processer to move the data . 
+### nvCIm -> Non Volatile CIM 
+Computing directly inside the non volatile memory array 
+
+### reRAM 
+resistive Random Access memory ; A type of memory where the data is stored as resistive value rather than charge .
+
+## Strides
+In context to image processing , its the number of pixels the computation unit skips after each computation . 
+
+## Folding 
+It refers to Computation of each layer in different mac units ( **Unfolded**)or computing all in the came mac unit(**Folded**) .
+
 

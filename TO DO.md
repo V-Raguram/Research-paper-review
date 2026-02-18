@@ -5,3 +5,5 @@
 ## RISC -V Vector extension 
 ## Compute in memory 
 ## NPU 
+# DECIDE on an AI accelerator module design .
+
