@@ -17,6 +17,10 @@ A mutable "weight" is placed across input data which is dot product-ed with the 
 Each stage of mathematical computation is called as layer .
 ## MAC
 **Multiply-and-Accumulate** ,like the name suggests , is the process of Multiplying 2 numbers and adding them to a Variable . This is one of the primary functions any AI do and This process is done millions of times . 
+*(i)STATIC MAC* : It processes the data one number at a time .
+*(ii)Vector MAC* : multiple MAC units are placed side by side and one instruction tells all of them to do the calculation , essentially calculating multiple number at a time .
+*(iii)Systolic Array* : It is a specialized architecture of networked processors  that rhythmically process data through a hardware system. 2D grid of MAC units are placed and all work at the same time 
+
 ## Psum 
 **Partial sums** are intermediate values obtained while performing a **MAC** operation 
 ## Training AI
@@ -65,5 +69,4 @@ In context to image processing , its the number of pixels the computation unit s
 
 ## Folding 
 It refers to Computation of each layer in different mac units ( **Unfolded**)or computing all in the came mac unit(**Folded**) .
-
 
